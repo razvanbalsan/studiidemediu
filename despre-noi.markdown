@@ -29,6 +29,84 @@ Ne-am angajat astfel cu pasiune și profesionalism în tot ceea ce facem, într-
 
 **De aceea ne permitem să afirmăm că suntem diferiți!**
 
+## EVOLUȚIA NOASTRĂ ÎN TIMP
+
+<div class="timeline" markdown="1">
+
+<div class="timeline-item" markdown="1">
+<div class="timeline-year">2000</div>
+<div class="timeline-content">
+<img src="/assets/images/about-2000.png" alt="Primii pași în aerofotogrametrie - 2000">
+<h3>Primii pași în aerofotogrametrie</h3>
+<p>Începem explorarea tehnicilor de fotografiere aeriană pentru studii de mediu, folosind mijloace convenționale de fotografie aeriană.</p>
+</div>
+</div>
+
+<div class="timeline-item" markdown="1">
+<div class="timeline-year">2001</div>
+<div class="timeline-content">
+<h3>Înființarea companiei</h3>
+<p>Povestea noastră a început în anul <strong>2001</strong>, fiind vizat domeniul consultanței în vederea accesării unor instrumente financiare din etapa de preaderare. Punând în valoare pregătirea tehnică de specialitate, tematicile abordate au fost cele în relație cu problematicile de mediu.</p>
+</div>
+</div>
+
+<div class="timeline-item" markdown="1">
+<div class="timeline-year">2007</div>
+<div class="timeline-content">
+<h3>Certificare evaluatori atestați de mediu</h3>
+<p>Dobândim calitatea de <strong>evaluatori atestați de mediu</strong>, la care, pe parcursul anilor s-au adăugat noi competențe tehnice extinse (Certificare ISO9001, ISO14001, AFER).</p>
+</div>
+</div>
+
+<div class="timeline-item" markdown="1">
+<div class="timeline-year">2009</div>
+<div class="timeline-content">
+<img src="/assets/images/about-2009.png" alt="Prototip al primei drone dezvoltate - 2009">
+<h3>Prototip al primei drone dezvoltate</h3>
+<p>Investim în tehnologie de vârf, dezvoltând primul nostru prototip de dronă pentru aerofotogrametrie și studii de teren avansate.</p>
+</div>
+</div>
+
+<div class="timeline-item" markdown="1">
+<div class="timeline-year">2011</div>
+<div class="timeline-content">
+<h3>Acreditare în domeniul cercetării</h3>
+<p>În lumina prevederilor Legii Cercetării, demarăm procedura de acreditare/atestare în domeniul cercetării prin Autoritatea Națională pentru Cercetare Științifică, fiind înregistrată în Registrul Potențialilor Contractori ai Autorității Naționale pentru Cercetare și Știință (ANCS).</p>
+</div>
+</div>
+
+<div class="timeline-item" markdown="1">
+<div class="timeline-year">2016</div>
+<div class="timeline-content">
+<img src="/assets/images/about-2016.png" alt="Aerofotogramă de înaltă rezoluție - 2016">
+<h3>Aerofotogramă de înaltă rezoluție</h3>
+<p>Atingem noi standarde în calitatea datelor colectate, producând aerofotograme de înaltă rezoluție pentru studii complexe de mediu și biodiversitate.</p>
+</div>
+</div>
+
+<div class="timeline-item" markdown="1">
+<div class="timeline-year">2021</div>
+<div class="timeline-content">
+<h3>Calificare pentru facilități nucleare</h3>
+<p>Obținem calificarea pentru furnizare servicii și studii necesare în procesul de evaluare impact de mediu pentru SNN-SA sucursala CNE Cernavoda, în conformitate cu cerințele CNCAN (NSR 21, NSR 22).</p>
+</div>
+</div>
+
+<div class="timeline-item" markdown="1">
+<div class="timeline-year">Prezent</div>
+<div class="timeline-content">
+<div class="timeline-gis-grid">
+<img src="/assets/images/about-gis-1.png" alt="Model GIS pentru analize de mediu">
+<img src="/assets/images/about-gis-2.png" alt="Analiză spațială GIS">
+<img src="/assets/images/about-gis-3.png" alt="Modelare GIS avansată">
+</div>
+<h3>Tehnologie GIS de ultimă generație</h3>
+<p>Utilizăm cele mai avansate tehnici de modelare GIS, LIDAR și aerofotogrametrie pentru studii de mediu complexe, oferind clienților noștri analize spațiale de excepție și soluții bazate pe date precise.</p>
+</div>
+</div>
+
+</div>
+
 ## SCURTĂ PREZENTARE FORMALĂ
 
 Societatea Comercială **"Unitatea de Suport pentru Integrare" (USI)** este o firmă cu capital integral privat organizată sub forma unei Societăți cu responsabilități limitate, înregistrată la Camera de Comerț și Industrie Cluj cu nr de ordine înscris în Registrul Comerțului **J/12/1014/12.07.2001** și având Codul unic de înregistrare **RO 14054736**.

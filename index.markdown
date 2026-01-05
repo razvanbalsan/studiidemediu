@@ -3,24 +3,25 @@ layout: home
 title: Acasa
 body_class: home
 
-carousel_images:
-  - src: /assets/images/studii-de-mediu-2.webp
-    alt: Monitorizare studii de mediu
-    caption: Actiune de monitorizare in cadrul proiectului Tronson Caransebes-Lugoj-CFR
-  - src: /assets/images/studii-de-mediu-3.webp
-    alt: Studii de mediu
-    caption: Scanari UAV pentru evaluarea starii initiale a habitatelor
-  - src: /assets/images/studii-de-mediu-5.webp
-    alt: Expertiza mediu
-    caption: Aerofotograme si observatii de teren pentru strategii de reducere a impactului
+# carousel_images:
+#   - src: /assets/images/studii-de-mediu-2.webp
+#     alt: Monitorizare studii de mediu
+#     caption: Actiune de monitorizare in cadrul proiectului Tronson Caransebes-Lugoj-CFR
+#   - src: /assets/images/studii-de-mediu-3.webp
+#     alt: Studii de mediu
+#     caption: Scanari UAV pentru evaluarea starii initiale a habitatelor
+#   - src: /assets/images/studii-de-mediu-5.webp
+#     alt: Expertiza mediu
+#     caption: Aerofotograme si observatii de teren pentru strategii de reducere a impactului
 
 video_title: Experti in Consultanta de Mediu
 video_text: >
-  In cadrul etapei desfasurate de colegii nostri, au fost initiate scanari UAV pentru
-  evaluarea starii initiale a habitatelor care se suprapun zonei destinate demararii
-  lucrarilor de retehnologizare a caii ferate. Aerofotogramele rezultate, impreuna cu
-  observatiile de teren, sunt interpretate in vederea elaborarii de strategii de reducere
-  a impactului proiectului asupra zonelor afectate.
+  De la înființarea companiei în 2001, ne-am dedicat parcurgerii celor mai complexe tematici
+  de mediu, reglementând peste 1000 de proiecte la nivel național. Beneficiem de o puternică
+  echipă de experți cu înaltă pregătire profesională în științe naturale și integrăm tehnici
+  inovative de vârf - de la aerofotogrametrie și tehnologie UAV la modelare GIS și LIDAR -
+  pentru a oferi cele mai precise soluții de dezvoltare durabilă, transpunând în fapt
+  concepte teoretice desprinse din știința ecologiei aplicate.
 
 gallery_images:
   - thumb: /assets/images/studii-de-mediu-2.webp
