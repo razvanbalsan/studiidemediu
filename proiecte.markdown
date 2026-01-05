@@ -94,6 +94,7 @@ subtitle: Portofoliul nostru de proiecte
     </div>
     <h3><a href="{{ proiect.url }}">{{ proiect.title }}</a></h3>
     <p>{{ proiect.excerpt }}</p>
+    <a href="{{ proiect.url }}" class="btn-link">Detalii →</a>
   </div>
   {% endfor %}
 </div>
