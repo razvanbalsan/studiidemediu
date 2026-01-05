@@ -41,6 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // Carousel functionality
   initCarousel();
 
+  // Gallery lightbox
+  initGalleryLightbox();
+
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -169,3 +172,82 @@ window.addEventListener('scroll', () => {
 
   lastScroll = currentScroll;
 });
+
+// Simple Gallery Lightbox
+function initGalleryLightbox() {
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  if (galleryItems.length === 0) return;
+
+  // Prevent default link behavior
+  galleryItems.forEach((item, index) => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      openLightbox(index);
+    });
+  });
+
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    const item = galleryItems[currentIndex];
+    const imgSrc = item.getAttribute('href');
+    const imgAlt = item.querySelector('img').getAttribute('alt');
+    
+    // Create lightbox
+    const lightboxHTML = `
+      <div id="image-lightbox" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; display: flex; align-items: center; justify-content: center;">
+        <button onclick="closeLightbox()" style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.1); border: 2px solid rgba(255,255,255,0.3); border-radius: 50%; width: 50px; height: 50px; cursor: pointer; z-index: 10;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 24px; height: 24px;">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <button onclick="prevImage()" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.1); border: 2px solid rgba(255,255,255,0.3); border-radius: 50%; width: 50px; height: 50px; cursor: pointer; z-index: 10;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 24px; height: 24px;">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button onclick="nextImage()" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.1); border: 2px solid rgba(255,255,255,0.3); border-radius: 50%; width: 50px; height: 50px; cursor: pointer; z-index: 10;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 24px; height: 24px;">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+        <img src="${imgSrc}" alt="${imgAlt}" style="max-width: 90%; max-height: 90vh; object-fit: contain; border-radius: 4px; box-shadow: 0 8px 32px rgba(0,0,0,0.5);">
+      </div>
+    `;
+    
+    document.body.insertAdjacentHTML('beforeend', lightboxHTML);
+    document.body.style.overflow = 'hidden';
+    
+    // Add keyboard listener
+    document.addEventListener('keydown', handleKeyPress);
+  }
+
+  function handleKeyPress(e) {
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') nextImage();
+    if (e.key === 'ArrowLeft') prevImage();
+  }
+
+  window.closeLightbox = function() {
+    const lightbox = document.getElementById('image-lightbox');
+    if (lightbox) {
+      lightbox.remove();
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', handleKeyPress);
+    }
+  };
+
+  window.nextImage = function() {
+    closeLightbox();
+    currentIndex = (currentIndex + 1) % galleryItems.length;
+    openLightbox(currentIndex);
+  };
+
+  window.prevImage = function() {
+    closeLightbox();
+    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+    openLightbox(currentIndex);
+  };
+}

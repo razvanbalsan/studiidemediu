@@ -29,7 +29,7 @@ Ne-am angajat astfel cu pasiune și profesionalism în tot ceea ce facem, într-
 
 **De aceea ne permitem să afirmăm că suntem diferiți!**
 
-## EVOLUȚIA NOASTRĂ ÎN TIMP
+<!-- ## EVOLUȚIA NOASTRĂ ÎN TIMP -->
 
 <div class="timeline" markdown="1">
 

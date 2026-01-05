@@ -1,7 +1,7 @@
 // Timeline Styles
 .timeline {
   position: relative;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: $spacing-xxl auto;
   padding: $spacing-lg 0;
 
@@ -30,9 +30,9 @@
   
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 1fr 80px 1fr;
-    gap: $spacing-lg;
-    align-items: center;
+    grid-template-columns: 1fr 120px 1fr;
+    gap: $spacing-xl;
+    align-items: start; // Align to top instead of center to avoid shrinking
     margin-bottom: $spacing-xxl;
 
     // Alternate left/right
@@ -52,7 +52,7 @@
       }
       
       &::after {
-        left: calc(50% - 40px);
+        left: calc(50% - 60px);
       }
     }
     
@@ -72,7 +72,7 @@
       }
       
       &::after {
-        left: calc(50% + 40px);
+        left: calc(50% + 60px);
       }
     }
 
@@ -81,7 +81,7 @@
       content: '';
       position: absolute;
       top: 50%;
-      width: 30px;
+      width: 40px;
       height: 2px;
       background-color: $color-primary;
       transform: translateY(-50%);
@@ -94,8 +94,8 @@
   color: $color-white;
   font-weight: 700;
   font-size: 18px;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -118,6 +118,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  min-width: 350px; // Force minimum width to prevent shrinking
   
   &:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
@@ -139,8 +140,7 @@
   }
 
   img {
-    width: 100%;
-    max-width: 300px;
+    width: 300px; // Fixed width for images
     height: auto;
     border-radius: 6px;
     margin-bottom: $spacing-md;
