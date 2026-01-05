@@ -44,6 +44,7 @@
       .timeline-content {
         order: 1;
         text-align: right;
+        justify-self: start;
         
         img {
           margin-left: auto;
@@ -64,6 +65,7 @@
       .timeline-content {
         order: 3;
         text-align: left;
+        justify-self: end;
         
         img {
           margin-left: 0;
@@ -109,6 +111,7 @@
 
   @media (min-width: 768px) {
     margin: 0;
+    justify-self: center;
   }
 }
 
