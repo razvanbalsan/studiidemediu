@@ -1,92 +1,55 @@
-// Timeline Styles
+// Timeline Styles - Sidebar version
 .timeline {
   position: relative;
-  max-width: 1200px;
-  margin: $spacing-xxl auto;
-  padding: $spacing-lg 0;
+  padding-left: 80px; // Space for the timeline line and years
 
-  // Central vertical line (desktop only)
-  @media (min-width: 768px) {
+  // Vertical line on the left
+  &::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, 
+      transparent 0%, 
+      $color-primary 5%, 
+      $color-primary 95%, 
+      transparent 100%);
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 60px;
+    
     &::before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 0;
-      bottom: 0;
-      width: 3px;
-      background: linear-gradient(to bottom, 
-        transparent 0%, 
-        $color-primary 5%, 
-        $color-primary 95%, 
-        transparent 100%);
-      transform: translateX(-50%);
+      left: 30px;
     }
   }
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: $spacing-xl;
-  
-  @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 120px 1fr;
-    gap: $spacing-xl;
-    align-items: start; // Align to top instead of center to avoid shrinking
-    margin-bottom: $spacing-xxl;
+  margin-bottom: $spacing-xxl;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: $spacing-lg;
+  align-items: start;
 
-    // Alternate left/right
-    &:nth-child(even) {
-      .timeline-year {
-        order: 2;
-      }
-      
-      .timeline-content {
-        order: 1;
-        text-align: right;
-        justify-self: start;
-        
-        img {
-          margin-left: auto;
-          margin-right: 0;
-        }
-      }
-      
-      &::after {
-        left: calc(50% - 60px);
-      }
-    }
-    
-    &:nth-child(odd) {
-      .timeline-year {
-        order: 2;
-      }
-      
-      .timeline-content {
-        order: 3;
-        text-align: left;
-        justify-self: end;
-        
-        img {
-          margin-left: 0;
-          margin-right: auto;
-        }
-      }
-      
-      &::after {
-        left: calc(50% + 60px);
-      }
-    }
+  // Connection line from timeline to content
+  &::after {
+    content: '';
+    position: absolute;
+    left: -37px; // Position from the timeline line
+    top: 45px; // Align with year badge center
+    width: 30px;
+    height: 2px;
+    background-color: $color-primary;
+  }
 
-    // Connection line to center
+  @media (max-width: 767px) {
     &::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      width: 40px;
-      height: 2px;
-      background-color: $color-primary;
-      transform: translateY(-50%);
+      left: -27px;
+      width: 20px;
     }
   }
 }
@@ -95,23 +58,27 @@
   background: $color-primary;
   color: $color-white;
   font-weight: 700;
-  font-size: 18px;
-  width: 90px;
-  height: 90px;
+  font-size: 16px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  position: relative;
+  position: absolute;
+  left: -75px; // Position on the timeline line
+  top: 10px;
   z-index: 2;
-  margin: 0 auto $spacing-md;
   border: 4px solid $color-white;
   flex-shrink: 0;
 
-  @media (min-width: 768px) {
-    margin: 0;
-    justify-self: center;
+  @media (max-width: 767px) {
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+    left: -55px;
   }
 }
 
@@ -121,7 +88,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  min-width: 350px; // Force minimum width to prevent shrinking
+  text-align: left;
   
   &:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
@@ -130,7 +97,7 @@
 
   h3 {
     color: $color-secondary;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 0 $spacing-sm 0;
     font-weight: 600;
   }
@@ -139,11 +106,12 @@
     color: $color-text;
     line-height: 1.6;
     margin: 0;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   img {
-    width: 300px; // Fixed width for images
+    width: 100%;
+    max-width: 250px;
     height: auto;
     border-radius: 6px;
     margin-bottom: $spacing-md;
@@ -155,65 +123,13 @@
 // GIS Grid for present section
 .timeline-gis-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: $spacing-md;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: $spacing-sm;
   margin-bottom: $spacing-md;
 
   img {
     width: 100%;
     max-width: none;
     margin-bottom: 0;
-  }
-}
-
-// Mobile layout
-@media (max-width: 767px) {
-  .timeline {
-    padding-left: $spacing-md;
-    
-    &::before {
-      content: '';
-      position: absolute;
-      left: 40px;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background: linear-gradient(to bottom, 
-        transparent 0%, 
-        $color-primary 5%, 
-        $color-primary 95%, 
-        transparent 100%);
-    }
-  }
-
-  .timeline-item {
-    padding-left: $spacing-lg;
-    
-    &::after {
-      content: '';
-      position: absolute;
-      left: 40px;
-      top: 40px;
-      width: 20px;
-      height: 2px;
-      background-color: $color-primary;
-    }
-  }
-
-  .timeline-year {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0;
-  }
-
-  .timeline-content {
-    margin-left: 0;
-    text-align: left;
-    
-    img {
-      margin-left: 0;
-      margin-right: auto;
-    }
   }
 }

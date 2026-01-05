@@ -399,3 +399,33 @@
     font-size: 1.75rem;
   }
 }
+
+// Two-column layout for about page
+.about-two-column {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: $spacing-xxl;
+  align-items: start;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 55% 45%;
+    gap: $spacing-lg;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: $spacing-md;
+  }
+}
+
+.about-main-content {
+  // Main text content area
+}
+
+.about-sidebar {
+  // Sidebar for timeline - no sticky, just flows naturally
+  
+  @media (max-width: 768px) {
+    // Mobile layout remains the same
+  }
+}
