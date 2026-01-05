@@ -3,6 +3,8 @@ main:
     url: /
   - title: Despre noi
     url: /despre-noi/
+  - title: LIANA.BIO
+    url: /liana-bio/
   - title: Servicii
     url: /servicii/
     submenu:
