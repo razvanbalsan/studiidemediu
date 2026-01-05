@@ -1,0 +1,84 @@
+---
+layout: default
+---
+<article class="anunt-detail">
+  <header class="anunt-header">
+    <div class="container">
+      <div class="anunt-meta">
+        <span class="anunt-date">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          {{ page.date | date: "%d.%m.%Y" }}
+        </span>
+        {% if page.category %}
+        <span class="anunt-category">{{ page.category }}</span>
+        {% endif %}
+      </div>
+      <h1 class="anunt-title">{{ page.title }}</h1>
+      {% if page.company %}
+      <p class="anunt-company">{{ page.company }}</p>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="anunt-content">
+    <div class="container">
+      <div class="anunt-body">
+        {{ content }}
+      </div>
+
+      {% if page.documents %}
+      <div class="anunt-documents">
+        <h3>Documente disponibile</h3>
+        <ul>
+          {% for doc in page.documents %}
+          <li><a href="{{ doc.url }}" target="_blank">{{ doc.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      {% if page.consultation_locations %}
+      <div class="anunt-consultation">
+        <h3>Locatii pentru consultarea documentatiei</h3>
+        <ul>
+          {% for loc in page.consultation_locations %}
+          <li>
+            <strong>{{ loc.name }}</strong><br>
+            {{ loc.address }}<br>
+            Program: {{ loc.schedule }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      {% if page.public_debate %}
+      <div class="anunt-debate">
+        <h3>Dezbatere publica</h3>
+        <div class="debate-details">
+          <p><strong>Data:</strong> {{ page.public_debate.date }}</p>
+          <p><strong>Ora:</strong> {{ page.public_debate.time }}</p>
+          <p><strong>Locatia:</strong> {{ page.public_debate.location }}</p>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if page.deadline %}
+      <div class="anunt-deadline">
+        <h3>Termen limita</h3>
+        <p>Observatiile publicului se primesc pana la data de <strong>{{ page.deadline }}</strong>.</p>
+      </div>
+      {% endif %}
+
+      <div class="anunt-actions">
+        <a href="/anunturi/" class="btn btn-outline">&larr; Inapoi la lista de anunturi</a>
+        <a href="/contact/" class="btn btn-primary">Contacteaza-ne</a>
+      </div>
+    </div>
+  </div>
+</article>

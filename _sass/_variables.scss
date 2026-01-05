@@ -1,0 +1,41 @@
+// Colors
+$color-primary: #c19434;
+$color-primary-dark: #ad7816;
+$color-secondary: #34421e;
+$color-text: #5f5d57;
+$color-text-light: #888;
+$color-white: #ffffff;
+$color-gray-light: #f7f7f7;
+$color-gray: #efefef;
+$color-green: #509600;
+
+// Typography
+$font-primary: 'Lato', sans-serif;
+$font-heading: 'Roboto', sans-serif;
+$font-condensed: 'Roboto Condensed', sans-serif;
+
+$font-size-base: 15px;
+$line-height-base: 1.6;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+$spacing-xxl: 5rem;
+
+// Layout
+$container-max-width: 1340px;
+$header-height: 100px;
+$header-height-mobile: 70px;
+
+// Breakpoints
+$breakpoint-md: 778px;
+$breakpoint-lg: 992px;
+
+// Border Radius
+$border-radius: 5px;
+
+// Transitions
+$transition-base: 0.3s ease;

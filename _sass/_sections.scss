@@ -1,0 +1,326 @@
+// Video Section
+.video-section {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: $spacing-xxl 0;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color-green, 0.85);
+}
+
+.video-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: $color-white;
+}
+
+.video-title {
+  color: $color-white;
+  font-size: 2.5rem;
+  margin-bottom: $spacing-md;
+}
+
+.video-text {
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+// Gallery Section
+.gallery-section {
+  background-color: $color-white;
+  padding: $spacing-xxl 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  aspect-ratio: 1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform $transition-base;
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+
+  &:hover .gallery-overlay {
+    opacity: 1;
+  }
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color-primary, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity $transition-base;
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    color: $color-white;
+  }
+}
+
+// Page Header
+.page-header {
+  background-color: $color-secondary;
+  color: $color-white;
+  padding: $spacing-xl 0;
+  text-align: center;
+}
+
+.page-title {
+  color: $color-white;
+  margin-bottom: 0;
+}
+
+.page-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.125rem;
+  margin-top: $spacing-sm;
+}
+
+.page-content {
+  padding: $spacing-xl 0;
+  background-color: $color-white;
+}
+
+// Services Grid
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-lg;
+}
+
+.service-card {
+  background-color: $color-gray-light;
+  border-radius: $border-radius;
+  padding: $spacing-lg;
+  text-align: center;
+  transition: all $transition-base;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    background-color: $color-primary;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto $spacing-md;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      color: $color-white;
+    }
+  }
+
+  h3 {
+    margin-bottom: $spacing-sm;
+  }
+
+  p {
+    color: $color-text-light;
+    font-size: 0.9rem;
+    margin-bottom: $spacing-md;
+  }
+}
+
+// Team Grid
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $spacing-lg;
+}
+
+.team-member {
+  text-align: center;
+
+  .member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto $spacing-md;
+    border: 4px solid $color-gray;
+  }
+
+  h3 {
+    margin-bottom: $spacing-xs;
+    font-size: 1.125rem;
+  }
+
+  .member-role {
+    color: $color-primary;
+    font-size: 0.9rem;
+  }
+}
+
+// Contact Form
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+
+  .form-group {
+    margin-bottom: $spacing-md;
+  }
+
+  label {
+    display: block;
+    margin-bottom: $spacing-xs;
+    font-weight: 500;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: $spacing-sm;
+    border: 1px solid $color-gray;
+    border-radius: $border-radius;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color $transition-base;
+
+    &:focus {
+      outline: none;
+      border-color: $color-primary;
+    }
+  }
+
+  textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+// Contact Info Grid
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $spacing-xl;
+  margin-bottom: $spacing-xl;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: $spacing-md;
+
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: $color-primary;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      color: $color-white;
+    }
+  }
+
+  h4 {
+    margin-bottom: $spacing-xs;
+  }
+
+  p {
+    color: $color-text-light;
+    margin: 0;
+  }
+}
+
+// Responsive Sections
+@media (max-width: $breakpoint-lg) {
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-title {
+    font-size: 1.75rem;
+  }
+}

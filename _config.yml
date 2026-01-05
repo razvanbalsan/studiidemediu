@@ -1,0 +1,81 @@
+# Site settings
+title: UNITATEA DE SUPORT PENTRU INTEGRARE
+tagline: "EXPERTII IN CONSULTANTA DE MEDIU"
+description: >-
+  Experți în consultanță de mediu. Oferim servicii de documentații tehnice,
+  monitorizare, aerofotogrametrie, LIDAR, modelare GIS și macrofotografie.
+baseurl: ""
+url: ""
+
+# Contact Information
+email: office@studiidemediu.ro
+phone: "0264 410 071"
+mobile: "0744 826 619"
+address: "Strada Baladei Nr. 35, Cluj Napoca, Cluj, Romania"
+
+# Social Media
+twitter_username: ""
+github_username: ""
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - old_website/
+  - README.md
+  - CLAUDE.md
+
+# Collections
+collections:
+  proiecte:
+    output: true
+    permalink: /proiecte/:name/
+  servicii:
+    output: true
+    permalink: /servicii/:name/
+  anunturi:
+    output: true
+    permalink: /anunturi/:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "proiecte"
+    values:
+      layout: "proiect"
+  - scope:
+      path: ""
+      type: "servicii"
+    values:
+      layout: "serviciu"
+  - scope:
+      path: ""
+      type: "anunturi"
+    values:
+      layout: "anunt"

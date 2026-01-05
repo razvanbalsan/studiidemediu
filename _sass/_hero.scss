@@ -1,0 +1,213 @@
+// Hero Section
+.hero {
+  background-color: $color-white;
+  padding: $spacing-xl 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-xl;
+  align-items: center;
+}
+
+.hero-content {
+  padding-right: $spacing-lg;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $color-secondary;
+  margin-bottom: $spacing-sm;
+  line-height: 1.2;
+}
+
+.hero-tagline {
+  font-size: 1.25rem;
+  color: $color-primary;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: $spacing-md;
+}
+
+.hero-divider {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, $color-primary, transparent);
+  margin-bottom: $spacing-md;
+}
+
+.hero-slogan {
+  font-size: 1.125rem;
+  font-style: italic;
+  color: $color-text-light;
+  margin-bottom: $spacing-lg;
+}
+
+// Announcement Box
+.announcement-box {
+  margin-top: $spacing-xl;
+  background-color: $color-gray-light;
+  border-left: 4px solid $color-primary;
+  padding: $spacing-md;
+  border-radius: 0 $border-radius $border-radius 0;
+
+  .announcement-label {
+    display: inline-block;
+    background-color: $color-primary;
+    color: $color-white;
+    padding: $spacing-xs $spacing-sm;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: $border-radius;
+    margin-bottom: $spacing-sm;
+  }
+
+  .announcement-content {
+    font-size: 0.9rem;
+    color: $color-text;
+  }
+}
+
+// Hero Carousel
+.hero-carousel {
+  position: relative;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: $color-white;
+  padding: $spacing-lg $spacing-md $spacing-md;
+  font-size: 0.9rem;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $spacing-sm;
+  pointer-events: none;
+}
+
+.carousel-prev,
+.carousel-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: all $transition-base;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    color: $color-secondary;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+
+    svg {
+      color: $color-white;
+    }
+  }
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: $spacing-md;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: $spacing-xs;
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all $transition-base;
+
+    &.active,
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+}
+
+// Responsive Hero
+@media (max-width: $breakpoint-lg) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: $spacing-lg;
+  }
+
+  .hero-content {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .hero-divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .carousel-slide img {
+    height: 300px;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .carousel-slide img {
+    height: 250px;
+  }
+}

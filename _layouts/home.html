@@ -1,0 +1,150 @@
+---
+layout: default
+---
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <!-- Left Column -->
+      <div class="hero-content">
+        <h1 class="hero-title">{{ site.title }}</h1>
+        <p class="hero-tagline">{{ site.tagline }}</p>
+        <div class="hero-divider"></div>
+        <p class="hero-slogan">Pentru ca suntem diferiti!</p>
+        <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">Planifica o vizita</a>
+      </div>
+
+      <!-- Right Column - Carousel -->
+      <div class="hero-carousel">
+        <div class="carousel">
+          {% for image in page.carousel_images %}
+            <div class="carousel-slide">
+              <img src="{{ image.src | relative_url }}" alt="{{ image.alt }}">
+              {% if image.caption %}
+                <div class="carousel-caption">{{ image.caption }}</div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-prev" aria-label="Previous">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="carousel-next" aria-label="Next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="carousel-dots"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section class="video-section">
+  <div class="video-background">
+    <video autoplay muted loop playsinline poster="{{ '/assets/images/usi-studii-de-mediu-intro-fundal.jpg' | relative_url }}">
+      <source src="{{ '/assets/images/studii-de-mediu.mp4' | relative_url }}" type="video/mp4">
+      <source src="{{ '/assets/images/studii-de-mediu.webm' | relative_url }}" type="video/webm">
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+  <div class="container video-content">
+    <h2 class="video-title">{{ page.video_title | default: "Experti in Consultanta de Mediu" }}</h2>
+    <p class="video-text">{{ page.video_text }}</p>
+  </div>
+</section>
+
+<!-- Announcements Section -->
+{% assign recent_anunturi = site.anunturi | sort: 'date' | reverse | limit: 3 %}
+{% if recent_anunturi.size > 0 %}
+<section class="anunturi-section">
+  <div class="container">
+    <h2 class="section-title">Anunturi</h2>
+    <div class="anunturi-home-grid">
+      {% for anunt in recent_anunturi %}
+      <article class="anunt-home-card">
+        <div class="anunt-home-header">
+          <span class="anunt-home-date">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            {{ anunt.date | date: "%d.%m.%Y" }}
+          </span>
+          {% if anunt.category %}
+          <span class="anunt-home-category">{{ anunt.category }}</span>
+          {% endif %}
+        </div>
+        <h3 class="anunt-home-title">
+          <a href="{{ anunt.url | relative_url }}">{{ anunt.title }}</a>
+        </h3>
+        {% if anunt.company %}
+        <p class="anunt-home-company">{{ anunt.company }}</p>
+        {% endif %}
+        {% if anunt.excerpt %}
+        <p class="anunt-home-excerpt">{{ anunt.excerpt | truncate: 150 }}</p>
+        {% endif %}
+        {% if anunt.public_debate %}
+        <div class="anunt-home-debate">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span>Dezbatere publica: {{ anunt.public_debate.date }}, {{ anunt.public_debate.time }}</span>
+        </div>
+        {% endif %}
+        <a href="{{ anunt.url | relative_url }}" class="anunt-home-link">
+          Citeste mai mult
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="anunturi-home-cta">
+      <a href="{{ '/anunturi/' | relative_url }}" class="btn btn-primary btn-lg">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+        </svg>
+        Vezi toate anunturile
+      </a>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- Gallery Section -->
+<section class="gallery-section">
+  <div class="container">
+    <h2 class="section-title">Cateva imagini din activitatea noastra...</h2>
+    <div class="gallery-grid">
+      {% for image in page.gallery_images %}
+        <a href="{{ image.full | relative_url }}" class="gallery-item" data-caption="{{ image.caption }}">
+          <img src="{{ image.thumb | relative_url }}" alt="{{ image.alt }}" loading="lazy">
+          <div class="gallery-overlay">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              <line x1="11" y1="8" x2="11" y2="14"></line>
+              <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{{ content }}

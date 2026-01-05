@@ -1,0 +1,390 @@
+// Proiecte Grid and Cards
+.proiecte-intro {
+  margin-bottom: $spacing-xl;
+  
+  p {
+    font-size: 1.125rem;
+    color: $color-text;
+    line-height: 1.7;
+    max-width: 800px;
+  }
+}
+
+.proiecte-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: $spacing-lg;
+  margin: $spacing-xl 0;
+}
+
+.no-proiecte {
+  text-align: center;
+  color: $color-text-light;
+  padding: $spacing-xxl $spacing-xl;
+  background-color: $color-gray-light;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  margin: $spacing-xl 0;
+}
+
+.proiect-card {
+  background: $color-white;
+  border: 1px solid $color-gray;
+  border-radius: 8px;
+  padding: $spacing-lg;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    border-color: $color-primary;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    margin: $spacing-md 0 $spacing-sm;
+    font-family: $font-heading;
+    color: $color-secondary;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  p {
+    color: $color-text;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: $spacing-md;
+    flex-grow: 1;
+  }
+
+  .btn-link {
+    display: inline-flex;
+    align-items: center;
+    color: $color-primary;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: auto;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+}
+
+.proiect-card-header {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  flex-wrap: wrap;
+}
+
+.proiect-category {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  background-color: rgba($color-primary, 0.1);
+  color: $color-primary;
+}
+
+.proiect-status {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 4px;
+
+  &.status-in-desfasurare {
+    background-color: rgba($color-green, 0.1);
+    color: $color-green;
+  }
+
+  &.status-in-pregatire {
+    background-color: rgba($color-primary, 0.1);
+    color: $color-primary;
+  }
+
+  &.status-consultare-publica {
+    background-color: rgba($color-secondary, 0.1);
+    color: $color-secondary;
+  }
+}
+
+.proiect-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: $color-text-light;
+  font-size: 0.9rem;
+  margin-bottom: $spacing-sm;
+
+  .icon {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+  }
+}
+
+// Proiect Detail Page
+.proiect {
+  .proiect-header {
+    background-color: $color-gray-light;
+    padding: $spacing-xl 0 $spacing-lg;
+    margin-bottom: $spacing-xl;
+
+    .proiect-category {
+      margin-bottom: $spacing-sm;
+    }
+
+    .proiect-title {
+      font-size: 2.5rem;
+      color: $color-secondary;
+      margin: $spacing-sm 0;
+      font-family: $font-heading;
+    }
+
+    .proiect-excerpt {
+      font-size: 1.125rem;
+      color: $color-text;
+      margin: $spacing-md 0;
+      max-width: 800px;
+    }
+
+    .proiect-location {
+      font-size: 1rem;
+      margin-top: $spacing-md;
+    }
+
+    .proiect-status {
+      margin-top: $spacing-md;
+    }
+  }
+
+  .proiect-content {
+    padding: $spacing-xl 0;
+
+    h2 {
+      color: $color-secondary;
+      margin-top: $spacing-xl;
+      margin-bottom: $spacing-md;
+    }
+
+    h3 {
+      color: $color-secondary;
+      margin-top: $spacing-lg;
+      margin-bottom: $spacing-sm;
+    }
+
+    ul, ol {
+      margin-left: $spacing-lg;
+      margin-bottom: $spacing-md;
+
+      li {
+        margin-bottom: $spacing-xs;
+      }
+    }
+  }
+
+  .proiect-footer {
+    padding: $spacing-lg 0 $spacing-xl;
+    border-top: 1px solid $color-gray;
+
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      padding: $spacing-sm $spacing-md;
+      background-color: $color-white;
+      border: 2px solid $color-primary;
+      color: $color-primary;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+// Portfolio Section
+.portfolio-section {
+  margin-top: $spacing-xxl;
+  padding-top: $spacing-xxl;
+  border-top: 2px solid $color-gray;
+
+  h2 {
+    color: $color-secondary;
+    font-family: $font-heading;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: $spacing-lg;
+    position: relative;
+    padding-bottom: $spacing-md;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, $color-primary 0%, transparent 100%);
+    }
+  }
+
+  .portfolio-intro {
+    font-size: 1.125rem;
+    color: $color-text;
+    line-height: 1.8;
+    margin-bottom: $spacing-xxl;
+    max-width: 900px;
+    background-color: $color-gray-light;
+    padding: $spacing-lg;
+    border-radius: 8px;
+    border-left: 4px solid $color-primary;
+
+    strong {
+      color: $color-primary;
+      font-weight: 700;
+    }
+  }
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: $spacing-lg;
+  margin: $spacing-xl 0;
+}
+
+.portfolio-card {
+  background: $color-white;
+  border: 1px solid $color-gray;
+  border-radius: 8px;
+  padding: $spacing-lg;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+    border-color: $color-primary;
+
+    .portfolio-card-icon {
+      background-color: $color-primary;
+      
+      svg {
+        stroke: $color-white;
+      }
+    }
+  }
+
+  &.portfolio-card-highlight {
+    border: 2px solid $color-primary;
+    background: linear-gradient(135deg, rgba($color-primary, 0.02) 0%, $color-white 100%);
+
+    .portfolio-card-icon {
+      background-color: $color-primary;
+      
+      svg {
+        stroke: $color-white;
+      }
+    }
+
+    h3 {
+      color: $color-primary;
+    }
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    color: $color-secondary;
+    margin: $spacing-md 0;
+    font-family: $font-heading;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: $spacing-xs 0;
+      padding-left: $spacing-md;
+      color: $color-text;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 14px;
+        width: 6px;
+        height: 6px;
+        background-color: $color-primary;
+        border-radius: 50%;
+      }
+
+      strong {
+        color: $color-secondary;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.portfolio-card-icon {
+  width: 48px;
+  height: 48px;
+  background-color: rgba($color-primary, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    stroke: $color-primary;
+    transition: stroke 0.3s ease;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .proiecte-grid,
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: $spacing-md;
+  }
+
+  .proiect {
+    .proiect-header {
+      .proiect-title {
+        font-size: 2rem;
+      }
+    }
+  }
+}

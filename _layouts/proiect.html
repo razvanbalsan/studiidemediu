@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<article class="proiect">
+  <header class="proiect-header">
+    <div class="container">
+      {% if page.category %}
+        <span class="proiect-category">{{ page.category | replace: '-', ' ' | capitalize }}</span>
+      {% endif %}
+      <h1 class="proiect-title">{{ page.title }}</h1>
+      {% if page.excerpt %}
+        <p class="proiect-excerpt">{{ page.excerpt }}</p>
+      {% endif %}
+      {% if page.location %}
+        <p class="proiect-location">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          {{ page.location }}
+        </p>
+      {% endif %}
+      {% if page.status %}
+        <span class="proiect-status status-{{ page.status }}">{{ page.status | replace: '-', ' ' | capitalize }}</span>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="proiect-content">
+    <div class="container">
+      {{ content }}
+    </div>
+  </div>
+
+  <div class="proiect-footer">
+    <div class="container">
+      <a href="/proiecte/" class="btn-back">← Înapoi la Proiecte</a>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,32 @@
+main:
+  - title: Acasa
+    url: /
+  - title: Despre noi
+    url: /despre-noi/
+  - title: Servicii
+    url: /servicii/
+    submenu:
+      - title: Documentatii Tehnice si Procedurale
+        url: /servicii/documentatii/
+      - title: Monitorizare
+        url: /servicii/monitorizare/
+      - title: Aerofotogrametrie
+        url: /servicii/aerofotogrametrie/
+      - title: LIDAR
+        url: /servicii/lidar/
+      - title: Modelare GIS
+        url: /servicii/gis/
+      - title: Macrofotografie
+        url: /servicii/macrofotografie/
+  - title: Proiecte
+    url: /proiecte/
+  - title: Echipa
+    url: /echipa/
+  - title: Anunturi
+    url: /anunturi/
+  - title: Linkuri Utile
+    url: /linkuri/
+  - title: Galerie
+    url: /galerie/
+  - title: Contact
+    url: /contact/
