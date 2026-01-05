@@ -2,18 +2,14 @@
 layout: serviciu
 title: Modelare GIS
 permalink: /servicii/gis/
-excerpt: Servicii avansate de modelare GIS și analiză spațială pentru proiecte de mediu
+excerpt: Am fost printre primii care recunoscând valoarea tehnologiei GIS, am aplicat în evaluarea de mediu modele de analiză avansată, portofoliul nostru în acest domeniu fiind extrem de vast.
 ---
 
-## MODELARE GIS
-
-Am fost printre **primii care recunoscând valoarea tehnologiei GIS**, am aplicat în evaluarea de mediu modele de analiză avansată, portofoliul nostru în acest domeniu fiind extrem de vast.
-
-### Metodologie inovatoare
+## Metodologie inovatoare
 
 Făcând apel la tehnologia GIS, am propus **în premieră o metodologie de evaluare a resurselor naturale exploatabile** (fructe de pădure și ciuperci) ce s-a bucurat de apreciere din partea Autorității centrale de mediu (adresa 66200/AB/2004), fiind aplicată și în prezent în procesul de reglementare de către firma noastră, la nivel național.
 
-### Servicii oferite:
+## Servicii oferite
 
 - Modelare cartografică complexă
 - Analize spațiale multi-criterii
@@ -23,11 +19,11 @@ Făcând apel la tehnologia GIS, am propus **în premieră o metodologie de eval
 - Planificare territorială
 - Integrare date aerofotogrametrie și LIDAR
 
-### Tehnologie și software:
+## Tehnologie și software
 
 Cartogramele obținute din aerofotogrametrie și LIDAR reprezintă baza de documentare a modelelor pe care le realizăm în format GIS și care astfel ne permit să realizăm modele cartografice și analize de mediu de o calitate înaltă.
 
-### Aplicații:
+## Aplicații
 
 - Studii de impact asupra mediului
 - Planuri de management arii protejate

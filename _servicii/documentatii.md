@@ -2,14 +2,10 @@
 layout: serviciu
 title: Documentații Tehnice și Procedurale
 permalink: /servicii/documentatii/
-excerpt: Servicii complete de documentații tehnice și procedurale pentru proiecte de infrastructură și dezvoltare
+excerpt: Servicii complete de documentații tehnice și procedurale pentru proiecte de infrastructură și dezvoltare, asigurând conformitatea cu legislația de mediu în vigoare.
 ---
 
-## DOCUMENTAȚII TEHNICE ȘI PROCEDURALE
-
-Oferim servicii complete de documentații tehnice și procedurale pentru diverse tipuri de proiecte, asigurând conformitatea cu legislația de mediu în vigoare.
-
-### Servicii oferite:
+## Servicii oferite:
 
 - Rapoarte de mediu
 - Rapoarte privind impactul asupra mediului
