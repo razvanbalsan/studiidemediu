@@ -5,10 +5,6 @@ status: in-desfasurare
 excerpt: Proiect de cercetare pentru monitorizarea vegetației folosind tehnici spectrale avansate
 ---
 
-## SpectraVEG
-
-**Proiect de cercetare pentru monitorizarea vegetației folosind tehnici spectrale avansate**
-
 ### Descriere proiect
 
 SpectraVEG este un proiect inovator de cercetare care utilizează tehnologii spectrale avansate pentru monitorizarea și analiza vegetației. Proiectul combină tehnici de teledetecție cu analiza spectrală pentru a oferi informații detaliate despre starea ecosistemelor.

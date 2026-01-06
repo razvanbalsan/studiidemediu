@@ -7,10 +7,17 @@ layout: default
     <div class="hero-grid">
       <!-- Left Column -->
       <div class="hero-content">
-        <h1 class="hero-title">{{ site.title }}</h1>
-        <p class="hero-tagline">{{ site.tagline }}</p>
-        <div class="hero-divider"></div>
-        <p class="hero-slogan">Pentru ca suntem diferiti!</p>
+        <div class="hero-text-logo">
+          <div class="hero-logo">
+            <img src="{{ '/assets/images/USI-LOGO-BIG-TEXT.png' | relative_url }}" alt="USI Logo">
+          </div>
+          <div class="hero-text">
+            <h1 class="hero-title">{{ site.title }}</h1>
+            <p class="hero-tagline">{{ site.tagline }}</p>
+            <div class="hero-divider"></div>
+            <p class="hero-slogan">Pentru ca suntem diferiti!</p>
+          </div>
+        </div>
         <!-- <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">Planifica o vizita</a> -->
       </div>
 

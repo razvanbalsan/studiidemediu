@@ -2,15 +2,9 @@
 title: Centrala Electrică Eoliană Stuhulet
 category: energie-regenerabila
 status: in-desfasurare
-excerpt: Studiu de evaluare a impactului asupra mediului pentru parc eolian în zona Stuhulet
+excerpt: Studiu de evaluare a impactului asupra mediului pentru Centrala Electrică Eoliană Stuhulet - un proiect de energie regenerabilă care vizează dezvoltarea unui parc eolian în zona Stuhulet.
 location: Zona Stuhulet, România
 ---
-
-## Centrala Electrică Eoliană Stuhulet
-
-### Descriere proiect
-
-Studiu de evaluare a impactului asupra mediului pentru Centrala Electrică Eoliană Stuhulet - un proiect de energie regenerabilă care vizează dezvoltarea unui parc eolian în zona Stuhulet.
 
 ### Servicii oferite
 

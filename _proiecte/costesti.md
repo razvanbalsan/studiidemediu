@@ -7,8 +7,6 @@ location: Județul Vaslui, comuna Costești
 cadastral_numbers: "77090, 76886, 72851, 72404, 72403, 77226, 77278, 77299, 78789, 78790, 78791, 74127, 158, 113, 75277"
 ---
 
-## Centrala Electrică Eoliană Costești
-
 ### Anunț de interes public
 
 **SC ELAWAN BUCHAREST RENEWABLE ENERGY 10 SRL** anunță publicul interesat cu privire la depunerea raportului privind impactul asupra mediului și a studiului de evaluare adecvată pentru proiectul **"Centrala Electrică Eoliană Costești"**, propus a fi amplasat în județul Vaslui, comuna Costești - în extravilan.

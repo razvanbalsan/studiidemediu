@@ -15,6 +15,28 @@
   padding-right: $spacing-lg;
 }
 
+.hero-text-logo {
+  display: flex;
+  align-items: center;
+  gap: $spacing-lg;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-logo {
+  flex-shrink: 0;
+  
+  img {
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    max-width: 250px;
+    object-fit: contain;
+  }
+}
+
 .hero-title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -182,6 +204,15 @@
   .hero-content {
     padding-right: 0;
     text-align: center;
+  }
+
+  .hero-text-logo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-logo img {
+    max-height: 150px;
   }
 
   .hero-divider {
