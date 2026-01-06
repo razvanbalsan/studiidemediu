@@ -2,34 +2,34 @@
 layout: page
 title: Linkuri Utile
 permalink: /linkuri/
-subtitle: Resurse si institutii relevante
+subtitle: Resurse și instituții relevante
 ---
 
-## Institutii de reglementare
+## Instituții de reglementare
 
-- [Ministerul Mediului, Apelor si Padurilor](http://www.mmediu.ro/) - Autoritatea centrala pentru protectia mediului
-- [Agentia Nationala pentru Protectia Mediului](http://www.anpm.ro/) - ANPM
-- [Agentia pentru Protectia Mediului Cluj](http://apmcj.anpm.ro/) - APM Cluj
-- [Garda Nationala de Mediu](http://www.gnm.ro/) - Controlul conformarii cu legislatia de mediu
+- [Ministerul Mediului, Apelor și Pădurilor](http://www.mmediu.ro/) - Autoritatea centrală pentru protecția mediului
+- [Agenția Națională pentru Protecția Mediului](http://www.anpm.ro/) - ANPM
+- [Agenția pentru Protecția Mediului Cluj](http://apmcj.anpm.ro/) - APM Cluj
+- [Garda Națională de Mediu](http://www.gnm.ro/) - Controlul conformării cu legislația de mediu
 
-## Legislatie
+## Legislație
 
-- [Legislatie de mediu](http://www.mmediu.ro/categorie/legislatie-mediu/19) - Legi, ordonante si hotarari de guvern
+- [Legislație de mediu](http://www.mmediu.ro/categorie/legislatie-mediu/19) - Legi, ordonanțe și hotărâri de guvern
 - [Directiva EIA](https://ec.europa.eu/environment/eia/eia-legalcontext.htm) - Evaluarea impactului asupra mediului
-- [Directiva SEA](https://ec.europa.eu/environment/eia/sea-legalcontext.htm) - Evaluarea strategica de mediu
+- [Directiva SEA](https://ec.europa.eu/environment/eia/sea-legalcontext.htm) - Evaluarea strategică de mediu
 
-## Retele Natura 2000
+## Rețele Natura 2000
 
-- [Natura 2000 Romania](http://natura2000.ro/) - Informatii despre siturile Natura 2000
-- [European Environment Agency](https://www.eea.europa.eu/) - Agentia Europeana de Mediu
+- [Natura 2000 Romania](http://natura2000.ro/) - Informații despre siturile Natura 2000
+- [European Environment Agency](https://www.eea.europa.eu/) - Agenția Europeană de Mediu
 
-## Organizatii profesionale
+## Organizații profesionale
 
-- [Asociatia Romana pentru Transfer Tehnologic si Inovare](http://www.arott.ro/) - AROTT
-- [Camera de Comert si Industrie Cluj](https://www.ccicj.ro/) - CCI Cluj
+- [Asociația Română pentru Transfer Tehnologic și Inovare](http://www.arott.ro/) - AROTT
+- [Camera de Comerț și Industrie Cluj](https://www.ccicj.ro/) - CCI Cluj
 
 ## Resurse tehnice
 
 - [QGIS](https://qgis.org/) - Software GIS open source
-- [OpenStreetMap](https://www.openstreetmap.org/) - Harti colaborative
-- [INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu/) - Infrastructura de date spatiale
+- [OpenStreetMap](https://www.openstreetmap.org/) - Hărți colaborative
+- [INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu/) - Infrastructura de date spațiale

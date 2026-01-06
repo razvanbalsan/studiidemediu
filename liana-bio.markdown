@@ -2,7 +2,7 @@
 layout: page
 title: LIANA.BIO
 permalink: /liana-bio/
-subtitle: Platforma digitala pentru studii de mediu si biodiversitate
+subtitle: Platformă digitală pentru studii de mediu și biodiversitate
 ---
 
 ## DESPRE LIANA.BIO

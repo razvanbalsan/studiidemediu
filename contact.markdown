@@ -2,7 +2,9 @@
 layout: page
 title: Contact
 permalink: /contact/
-subtitle: Suntem aici sa va ajutam
+subtitle: Suntem aici să vă ajutăm
+description: "Contactați-ne pentru servicii de consultanță de mediu: studii de impact, monitorizare, aerofotogrametrie. Biroul în Cluj-Napoca. Tel: 0264 410 071."
+keywords: "contact studii mediu Cluj-Napoca, consultanță mediu Cluj, USI studii de mediu, office@studiidemediu.ro"
 ---
 
 ## Informații de contact
@@ -20,8 +22,8 @@ subtitle: Suntem aici sa va ajutam
       </svg>
     </div>
     <div class="contact-card-content">
-      <h3>Adresa</h3>
-      <p>Strada Baladei Nr. 35<br>Cluj-Napoca, Cluj<br>Romania</p>
+      <h3>Adresă</h3>
+      <p>Strada Baladei Nr. 35<br>Cluj-Napoca, Cluj<br>România</p>
     </div>
   </div>
 

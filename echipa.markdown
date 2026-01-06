@@ -2,12 +2,12 @@
 layout: page
 title: Echipa
 permalink: /echipa/
-subtitle: Specialistii nostri
----
+subtitle: Specialistii nostridescription: "Echipă de 15 experți în consultanță de mediu: biologi, ecologiști, specialiști GIS, operatori drone și LIDAR. Pregătire profesională înaltă."
+keywords: "experți mediu, biologi, ecologiști, specialiști GIS, operatori drone, evaluatori atestați mediu, echipă consultanță mediu"---
 
-## Echipa noastra
+## Echipa noastră
 
-Succesul nostru se datoreaza echipei de profesionisti dedicati, fiecare aducand expertiza unica in domeniul consultantei de mediu.
+Succesul nostru se datorează echipei de profesioniști dedicați, fiecare aducând expertiză unică în domeniul consultanței de mediu.
 
 <div class="team-grid">
   <div class="team-member">
@@ -76,17 +76,17 @@ Succesul nostru se datoreaza echipei de profesionisti dedicati, fiecare aducand 
   </div>
 </div>
 
-## Expertiza
+## Expertiză
 
-Membrii echipei noastre au experienta in:
+Membrii echipei noastre au experiență în:
 
 - Elaborarea studiilor de evaluare a impactului asupra mediului (EIA)
 - Rapoarte de mediu pentru planuri urbanistice (SEA)
-- Studii de biodiversitate si monitorizare specii protejate
-- Operare echipamente LIDAR si drone
-- Analiza si modelare GIS
-- Documentatii pentru autorizatii de mediu
+- Studii de biodiversitate și monitorizare specii protejate
+- Operare echipamente LIDAR și drone
+- Analiză și modelare GIS
+- Documentații pentru autorizații de mediu
 
-## Colaborari
+## Colaborări
 
-Colaboram cu institutii de cercetare, universitati si organizatii de protectie a mediului pentru a oferi servicii de cea mai inalta calitate.
+Colaborăm cu instituții de cercetare, universități și organizații de protecție a mediului pentru a oferi servicii de cea mai înaltă calitate.

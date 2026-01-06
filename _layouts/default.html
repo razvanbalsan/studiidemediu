@@ -4,17 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="{{ '/assets/images/USI-LOGO-BIG-TEXT.png' | relative_url }}">
-  <link rel="apple-touch-icon" href="{{ '/assets/images/USI-LOGO-BIG-TEXT.png' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/USI-LOGO-BIG-TEXT.png' | absolute_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/USI-LOGO-BIG-TEXT.png' | absolute_url }}">
 
-  <!-- Google Fonts -->
+  <!-- Preload Critical CSS -->
+  <link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style">
+
+  <!-- Google Fonts - Load asynchronously -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  </noscript>
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">

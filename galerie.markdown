@@ -2,12 +2,12 @@
 layout: page
 title: Galerie Media
 permalink: /galerie/
-subtitle: Imagini din activitatea noastra
+subtitle: Imagini din activitatea noastră
 ---
 
 ## Galerie foto
 
-Cateva imagini din activitatea noastra - proiecte de monitorizare, aerofotogrametrie si studii de biodiversitate.
+Câteva imagini din activitatea noastră - proiecte de monitorizare, aerofotogrametrie și studii de biodiversitate.
 
 <div class="gallery-grid">
   <a href="/assets/images/studii-de-mediu-2.webp" class="gallery-item">

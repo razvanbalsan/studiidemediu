@@ -1,11 +1,16 @@
 # Site settings
 title: UNITATEA DE SUPORT PENTRU INTEGRARE
-tagline: "EXPERTII IN CONSULTANTA DE MEDIU"
+tagline: "EXPERȚII ÎN CONSULTANȚĂ DE MEDIU"
 description: >-
-  Experți în consultanță de mediu. Oferim servicii de documentații tehnice,
-  monitorizare, aerofotogrametrie, LIDAR, modelare GIS și macrofotografie.
+  Experți în consultanță de mediu din 2001. Oferim servicii complete de documentații tehnice,
+  studii de impact, monitorizare biodiversitate, aerofotogrametrie cu drone, scanare LIDAR,
+  modelare GIS și macrofotografie pentru proiecte de mediu în toată România.
 baseurl: ""
-url: ""
+url: "https://studiidemediu.ro"
+lang: ro
+author:
+  name: "UNITATEA DE SUPORT PENTRU INTEGRARE"
+  email: "office@studiidemediu.ro"
 
 # Contact Information
 email: office@studiidemediu.ro
@@ -26,6 +31,7 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclude from processing
 exclude:

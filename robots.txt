@@ -1,0 +1,14 @@
+# robots.txt for studiidemediu.ro
+User-agent: *
+Allow: /
+
+# Disallow admin and internal files
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /.jekyll-cache/
+Disallow: /_site/
+Disallow: /Gemfile
+Disallow: /Gemfile.lock
+
+# Sitemap location
+Sitemap: https://studiidemediu.ro/sitemap.xml

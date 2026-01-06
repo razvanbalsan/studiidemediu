@@ -3,6 +3,8 @@ layout: page
 title: Proiecte
 permalink: /proiecte/
 subtitle: Portofoliul nostru de proiecte
+description: "Portofoliu de peste 1000 proiecte de mediu: energie regenerabilă, infrastructură, industrie, dezvoltare urbană, arii protejate, cercetare biodiversitate."
+keywords: "proiecte energie regenerabilă, studii impact eoliene, fotovoltaice, proiecte infrastructură, arii protejate Natura 2000, cercetare biodiversitate"
 ---
 
 <div class="proiecte-intro">

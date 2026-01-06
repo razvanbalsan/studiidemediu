@@ -2,8 +2,8 @@
 layout: page
 title: Despre Noi
 permalink: /despre-noi/
-subtitle: Experti in consultanta de mediu din 2001
----
+subtitle: Experti in consultanta de mediu din 2001description: "Peste 20 ani de experiență în consultanță de mediu. Peste 1000 de proiecte reglementate, echipă de 15 experți, tehnologii inovatoare: drone, LIDAR, GIS."
+keywords: "consultanță mediu România, evaluatori atestați mediu, studii impact mediu, certificare ISO 9001, ISO 14001, echipă experți mediu"---
 
 <div class="about-two-column" markdown="1">
 

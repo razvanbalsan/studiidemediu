@@ -1,26 +1,28 @@
 ---
 layout: home
-title: Acasa
+title: Acasă
 body_class: home
+description: "Experți în consultanță de mediu din 2001. Servicii complete de studii de impact, monitorizare biodiversitate, aerofotogrametrie, LIDAR, GIS și documentații de mediu pentru proiecte în toată România."
+keywords: "studii de mediu, consultanță mediu, evaluare impact mediu, monitorizare biodiversitate, aerofotogrametrie, LIDAR, GIS, documentații mediu, Cluj-Napoca, România"
 
 # carousel_images:
 #   - src: /assets/images/studii-de-mediu-2.webp
 #     alt: Monitorizare studii de mediu
-#     caption: Actiune de monitorizare in cadrul proiectului Tronson Caransebes-Lugoj-CFR
+#     caption: Acțiune de monitorizare în cadrul proiectului Tronson Caransebes-Lugoj-CFR
 #   - src: /assets/images/studii-de-mediu-3.webp
 #     alt: Studii de mediu
-#     caption: Scanari UAV pentru evaluarea starii initiale a habitatelor
+#     caption: Scanări UAV pentru evaluarea stării inițiale a habitatelor
 #   - src: /assets/images/studii-de-mediu-5.webp
-#     alt: Expertiza mediu
-#     caption: Aerofotograme si observatii de teren pentru strategii de reducere a impactului
+#     alt: Expertiză mediu
+#     caption: Aerofotograme și observații de teren pentru strategii de reducere a impactului
 
-video_title: Experti in Consultanta de Mediu
+video_title: Experți în Consultanță de Mediu
 video_text: >
   De la înființarea companiei în 2001, ne-am dedicat parcurgerii celor mai complexe tematici
   de mediu, reglementând peste 1000 de proiecte la nivel național. Beneficiem de o puternică
   echipă de experți cu înaltă pregătire profesională în științe naturale și integrăm tehnici
   inovative de vârf - de la aerofotogrametrie și tehnologie UAV la modelare GIS și LIDAR -
-  pentru a oferi cele mai precise soluții de dezvoltare durabilă, transpunând în fapt
+  pentru a oferi cele mai precise soluții de dezvoltare durabilă, transpînând în fapt
   concepte teoretice desprinse din știința ecologiei aplicate.
 
 gallery_images:

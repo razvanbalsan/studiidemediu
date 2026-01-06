@@ -2,12 +2,14 @@
 layout: page
 title: Servicii
 permalink: /servicii/
-subtitle: Solutii complete pentru consultanta de mediu
+subtitle: Soluții complete pentru consultanță de mediu
+description: "Servicii complete de consultanță mediu: documentații tehnice, studii EIA, monitorizare, aerofotogrametrie cu drone, scanare LIDAR, modelare GIS, macrofotografie."
+keywords: "studii de impact mediu, rapoarte mediu, documentații autorizații mediu, monitorizare factori mediu, aerofotogrametrie drone, LIDAR, GIS, macrofotografie biodiversitate"
 ---
 
 ## Serviciile noastre
 
-Oferim o gama completa de servicii de consultanta de mediu, adaptate nevoilor specifice ale fiecarui proiect.
+Oferim o gamă completă de servicii de consultanță de mediu, adaptate nevoilor specifice ale fiecărui proiect.
 
 <div class="services-grid">
   <div class="service-card">
@@ -19,8 +21,8 @@ Oferim o gama completa de servicii de consultanta de mediu, adaptate nevoilor sp
         <line x1="16" y1="17" x2="8" y2="17"></line>
       </svg>
     </div>
-    <h3>Documentatii Tehnice si Procedurale</h3>
-    <p>Elaboram studii de evaluare a impactului asupra mediului, rapoarte de mediu si documentatii pentru autorizatii.</p>
+    <h3>Documentații Tehnice și Procedurale</h3>
+    <p>Elaborăm studii de evaluare a impactului asupra mediului, rapoarte de mediu și documentații pentru autorizații.</p>
     <a href="/servicii/documentatii/" class="btn btn-outline">Detalii</a>
   </div>
 
@@ -32,7 +34,7 @@ Oferim o gama completa de servicii de consultanta de mediu, adaptate nevoilor sp
       </svg>
     </div>
     <h3>Monitorizare</h3>
-    <p>Servicii de monitorizare a factorilor de mediu, biodiversitate si conformitate cu reglementarile in vigoare.</p>
+    <p>Servicii de monitorizare a factorilor de mediu, biodiversitate și conformitate cu reglementarile în vigoare.</p>
     <a href="/servicii/monitorizare/" class="btn btn-outline">Detalii</a>
   </div>
 
@@ -43,7 +45,7 @@ Oferim o gama completa de servicii de consultanta de mediu, adaptate nevoilor sp
       </svg>
     </div>
     <h3>Aerofotogrametrie</h3>
-    <p>Captura aeriana de inalta rezolutie cu drone profesionale pentru cartografiere si analiza teritoriala.</p>
+    <p>Captură aeriană de înaltă rezoluție cu drone profesionale pentru cartografiere și analiză teritorială.</p>
     <a href="/servicii/aerofotogrametrie/" class="btn btn-outline">Detalii</a>
   </div>
 
@@ -56,7 +58,7 @@ Oferim o gama completa de servicii de consultanta de mediu, adaptate nevoilor sp
       </svg>
     </div>
     <h3>LIDAR</h3>
-    <p>Scanare laser 3D pentru modele digitale ale terenului si analiza detaliata a suprafetelor.</p>
+    <p>Scanare laser 3D pentru modele digitale ale terenului și analiză detaliată a suprafețelor.</p>
     <a href="/servicii/lidar/" class="btn btn-outline">Detalii</a>
   </div>
 
@@ -69,7 +71,7 @@ Oferim o gama completa de servicii de consultanta de mediu, adaptate nevoilor sp
       </svg>
     </div>
     <h3>Modelare GIS</h3>
-    <p>Analiza spatiala avansata si creare de harti tematice pentru suport decizional.</p>
+    <p>Analiză spațială avansată și creare de hărți tematice pentru suport decizional.</p>
     <a href="/servicii/gis/" class="btn btn-outline">Detalii</a>
   </div>
 
@@ -82,7 +84,7 @@ Oferim o gama completa de servicii de consultanta de mediu, adaptate nevoilor sp
       </svg>
     </div>
     <h3>Macrofotografie</h3>
-    <p>Documentare fotografica de inalta calitate pentru studii de biodiversitate si identificare specii.</p>
+    <p>Documentare fotografică de înaltă calitate pentru studii de biodiversitate și identificare specii.</p>
     <a href="/servicii/macrofotografie/" class="btn btn-outline">Detalii</a>
   </div>
 </div>

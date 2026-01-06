@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Anunturi
+title: Anunțuri
 permalink: /anunturi/
 ---
 
 <section class="anunturi-page">
   <header class="page-header">
     <div class="container">
-      <h1 class="page-title">Anunturi</h1>
-      <p class="page-subtitle">Anunturi de interes public si consultari</p>
+      <h1 class="page-title">Anunțuri</h1>
+      <p class="page-subtitle">Anunțuri de interes public și consultări</p>
     </div>
   </header>
 
