@@ -44,7 +44,10 @@
     <div class="container">
       <div class="footer-bottom-content">
         <a href="{{ '/' | relative_url }}" class="footer-logo">
-          <img src="{{ '/assets/images/USI-LOGO-BIG.png' | relative_url }}" alt="{{ site.title }}">
+          <picture>
+            <source srcset="{{ '/assets/images/USI-LOGO-BIG.webp' | relative_url }}" type="image/webp">
+            <img src="{{ '/assets/images/USI-LOGO-BIG.png' | relative_url }}" alt="{{ site.title }}" width="80" height="80" loading="lazy">
+          </picture>
         </a>
         <p class="copyright">&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. Toate drepturile rezervate.</p>
       </div>

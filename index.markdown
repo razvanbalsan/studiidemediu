@@ -1,8 +1,8 @@
 ---
 layout: home
-title: Acasă
+title: Consultanță de Mediu Cluj - Studii Impact & Monitorizare
 body_class: home
-description: "Experți în consultanță de mediu din 2001. Servicii complete de studii de impact, monitorizare biodiversitate, aerofotogrametrie, LIDAR, GIS și documentații de mediu pentru proiecte în toată România."
+description: "Experți în consultanță de mediu din 2001. Studii impact, monitorizare biodiversitate, aerofotogrametrie drone, LIDAR, GIS. Peste 1000 proiecte finalizate."
 keywords: "studii de mediu, consultanță mediu, evaluare impact mediu, monitorizare biodiversitate, aerofotogrametrie, LIDAR, GIS, documentații mediu, Cluj-Napoca, România"
 
 # carousel_images:

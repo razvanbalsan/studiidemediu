@@ -9,7 +9,10 @@ layout: default
       <div class="hero-content">
         <div class="hero-text-logo">
           <div class="hero-logo">
-            <img src="{{ '/assets/images/USI-LOGO-BIG-TEXT.png' | relative_url }}" alt="USI Logo">
+            <picture>
+              <source srcset="{{ '/assets/images/USI-LOGO-BIG-TEXT.webp' | relative_url }}" type="image/webp">
+              <img src="{{ '/assets/images/USI-LOGO-BIG-TEXT.png' | relative_url }}" alt="USI Logo" loading="eager" width="400" height="560">
+            </picture>
           </div>
           <div class="hero-text">
             <h1 class="hero-title">{{ site.title }}</h1>
@@ -26,7 +29,7 @@ layout: default
         <div class="carousel">
           {% for image in page.carousel_images %}
             <div class="carousel-slide">
-              <img src="{{ image.src | relative_url }}" alt="{{ image.alt }}">
+              <img src="{{ image.src | relative_url }}" alt="{{ image.alt }}" loading="lazy">
               {% if image.caption %}
                 <div class="carousel-caption">{{ image.caption }}</div>
               {% endif %}
@@ -54,7 +57,7 @@ layout: default
 <!-- Video Section -->
 <section class="video-section">
   <div class="video-background">
-    <video autoplay muted loop playsinline poster="{{ '/assets/images/usi-studii-de-mediu-intro-fundal.jpg' | relative_url }}">
+    <video autoplay muted loop playsinline preload="metadata" poster="{{ '/assets/images/usi-studii-de-mediu-intro-fundal.webp' | relative_url }}">
       <source src="{{ '/assets/images/studii-de-mediu.mp4' | relative_url }}" type="video/mp4">
       <source src="{{ '/assets/images/studii-de-mediu.webm' | relative_url }}" type="video/webm">
     </video>

@@ -1,0 +1,28 @@
+{% comment %}
+  Responsive Image Include
+  Usage: {% include responsive-image.html src="/assets/images/example" alt="Description" loading="lazy" %}
+  
+  Parameters:
+  - src: Base image path without extension (required)
+  - alt: Alt text for accessibility (required)
+  - loading: lazy or eager (default: lazy)
+  - width: Image width attribute
+  - height: Image height attribute
+  - sizes: Responsive sizes attribute (default: 100vw)
+  - class: CSS classes for the img element
+{% endcomment %}
+
+{% assign loading_attr = include.loading | default: "lazy" %}
+{% assign sizes_attr = include.sizes | default: "(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 1200px" %}
+
+<picture{% if include.class %} class="{{ include.class }}"{% endif %}>
+  <source srcset="{{ include.src }}.webp" type="image/webp">
+  <img 
+    src="{{ include.src }}.jpg" 
+    alt="{{ include.alt }}"
+    loading="{{ loading_attr }}"
+    {% if include.width %}width="{{ include.width }}"{% endif %}
+    {% if include.height %}height="{{ include.height }}"{% endif %}
+    {% if include.class %}class="{{ include.class }}"{% endif %}
+  >
+</picture>

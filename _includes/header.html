@@ -26,7 +26,10 @@
       <div class="nav-content">
         <!-- Logo -->
         <a href="{{ '/' | relative_url }}" class="logo">
-          <img src="{{ '/assets/images/USI-LOGO-BIG.png' | relative_url }}" alt="{{ site.title }}">
+          <picture>
+            <source srcset="{{ '/assets/images/USI-LOGO-BIG.webp' | relative_url }}" type="image/webp">
+            <img src="{{ '/assets/images/USI-LOGO-BIG.png' | relative_url }}" alt="{{ site.title }}" width="120" height="120" loading="eager">
+          </picture>
         </a>
 
         <!-- Mobile Menu Toggle -->
