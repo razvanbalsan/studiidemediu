@@ -17,29 +17,11 @@ subtitle: Platformă digitală pentru studii de mediu și biodiversitate
 - Sincronizare automată între dispozitive
 - Export în multiple formate (CSV, Excel, PDF, GIS)
 
-#### Integrare GIS Avansată
-- Vizualizare cartografică interactivă
-- Suprapunere straturi de informații (habitate, specii, zone protejate)
-- Analize spațiale automate
-- Compatibilitate cu formatele GIS standard (Shapefile, GeoJSON, KML)
-
-#### 🌿 Monitorizare Biodiversitate
+#### Monitorizare Biodiversitate
 - Inventariere floră și faună
 - Raportare conform standardelor Natura 2000
 - Identificare specii endemice și periclitate
 - Urmărire evolutivă a populațiilor
-
-#### Galerie Foto Integrată
-- Stocare nelimitată de fotografii georeferențiate
-- Macrofotografie și aerofotogrametrie
-- Organizare automată pe proiecte și locații
-- Metadate complete (coordonate GPS, dată, autor)
-
-#### Raportare Automată
-- Generare rapoarte tehnice standardizate
-- Grafice și diagrame interactive
-- Export conform cerințelor legale (APM, Ministerul Mediului)
-- Șabloane personalizabile pentru diverse tipuri de studii
 
 ### Avantaje pentru Utilizatori
 
@@ -92,26 +74,6 @@ LIANA.BIO completează perfect serviciile pe care le oferim:
 - **GIS**: Modele cartografice avansate
 - **Monitorizare**: Trasabilitate completă a observațiilor
 - **Macrofotografie**: Arhivă digitală de imagini de înaltă rezoluție
-
-### Rezultate și Impact
-
-De la lansare, LIANA.BIO a fost utilizată în:
-- Peste **200 de proiecte** de evaluare de mediu
-- **50+ arii protejate** monitorizate
-- Mai mult de **100.000 de observații** de teren înregistrate
-- **500 GB** de date geo-spațiale procesate
-- **15 instituții** partenere utilizatoare
-
-### Suport și Training
-
-Oferim suport complet pentru utilizatorii LIANA.BIO:
-- Sesiuni de training personalizate
-- Documentație tehnică detaliată
-- Asistență tehnică dedicată
-- Actualizări regulate și îmbunătățiri
-- Comunitate activă de utilizatori
-
----
 
 ## Accesează Platforma
 
