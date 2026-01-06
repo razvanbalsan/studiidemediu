@@ -11,13 +11,13 @@ subtitle: Platformă digitală pentru studii de mediu și biodiversitate
 
 ### Caracteristici Principale
 
-#### 📊 Gestionare Complexă de Date
+#### Gestionare Complexă de Date
 - Colectare structurată a datelor de teren în timp real
 - Bază de date centralizată cu peste 50.000 de înregistrări
 - Sincronizare automată între dispozitive
 - Export în multiple formate (CSV, Excel, PDF, GIS)
 
-#### 🗺️ Integrare GIS Avansată
+#### Integrare GIS Avansată
 - Vizualizare cartografică interactivă
 - Suprapunere straturi de informații (habitate, specii, zone protejate)
 - Analize spațiale automate
@@ -29,13 +29,13 @@ subtitle: Platformă digitală pentru studii de mediu și biodiversitate
 - Identificare specii endemice și periclitate
 - Urmărire evolutivă a populațiilor
 
-#### 📸 Galerie Foto Integrată
+#### Galerie Foto Integrată
 - Stocare nelimitată de fotografii georeferențiate
 - Macrofotografie și aerofotogrametrie
 - Organizare automată pe proiecte și locații
 - Metadate complete (coordonate GPS, dată, autor)
 
-#### 📈 Raportare Automată
+#### Raportare Automată
 - Generare rapoarte tehnice standardizate
 - Grafice și diagrame interactive
 - Export conform cerințelor legale (APM, Ministerul Mediului)
